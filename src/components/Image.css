@@ -1,0 +1,13 @@
+.image {
+    flex: 1; /* Takes equal space as text */
+    display: flex;
+    justify-content: right; /* Pushes image to the right */
+    z-index: 10000;
+  }
+  
+  .image img {
+    justify-content: right;
+    max-width: 30%; /* Ensures image is responsive */
+    border-radius: 10px;
+  }
+  

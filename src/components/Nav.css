@@ -1,0 +1,28 @@
+.navi {
+    display: flex;
+    background-color: beige;
+    border-radius: 20px;
+    justify-content: right;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.navi a{
+    font-size: 16px;
+    color: #113736 ;
+    text-decoration: none;
+    font-family: "Teko", sans-serif;
+    animation: fadeInUp 1s ease-out;
+}
+.navi :hover{
+    padding: auto;
+    background-color: #398b7c;
+    border-radius: 5px;
+    border: 20px;
+    color: rgb(255, 255, 255);
+}

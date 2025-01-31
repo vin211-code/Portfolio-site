@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:5173/#home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Final_files/client"></script>
+
+    
+    <link rel="stylesheet" href="./Final_files/css">
+     <link rel="stylesheet" href="./Final_files/all.min.css">
+     <link rel="stylesheet" href="./Final_files/all.min.css">
+   <link rel="stylesheet" href="./Final_files/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/Administrator/Documents/E-commerce/Finale/project/src/index.css">/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+body{
+  background-color: antiquewhite;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/Administrator/Documents/E-commerce/Finale/project/src/components/Nav.css">.navi {
+    display: flex;
+    background-color: beige;
+    border-radius: 20px;
+    justify-content: right;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.navi a{
+    font-size: 16px;
+    color: #113736 ;
+    text-decoration: none;
+    font-family: "Teko", sans-serif;
+    animation: fadeInUp 1s ease-out;
+}
+.navi :hover{
+    padding: auto;
+    background-color: #398b7c;
+    border-radius: 5px;
+    border: 20px;
+    color: rgb(255, 255, 255);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/Administrator/Documents/E-commerce/Finale/project/src/components/Sidebar.css">
+
+*{
+margin: 0;
+padding: auto;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.slide{
+    width: 200px;
+    background-image: linear-gradient(to right, #398b7c, #c6fdae);
+    transition: o.1s ease;
+    transition: smooth;
+    transform: translateX(-300px);
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 18px;
+    margin-left: 30px;
+    position: fixed;
+    z-index: 10000;
+}
+
+h1{
+    color: #113736 ;
+    font-weight: 600;
+    text-align: left;
+    pointer-events: none;
+    margin-left: 50px;
+    font-family: "Teko", sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    color: #113736 ;
+    font-weight: 400;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: small;
+    transition: smooth;
+    height: 3vh;
+    margin-bottom: 10px;
+    z-index: 100000;
+} 
+
+ul li:hover a{
+    color:rgb(10, 10, 10);
+    background-color: #c6fdae;
+    border-radius: 10px;
+}
+
+ul li a i{
+
+    width: 40px;
+    text-align: center;
+}
+
+.put {
+    display: none;
+    visibility: hidden;
+}
+
+
+.toggle{
+    height: 20px;
+    position: fixed;
+    width: 30px;
+    z-index: 100000;
+    left: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color:transparent;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+    color: #113736 ;
+    animation: fadeInUp 1s ease-out;
+}
+
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #113736 ;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    transition: transparent;
+    
+}
+
+.toggle .top{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .middle{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transparent;
+}
+
+.toggle .bottom{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked ~ .toggle .top{
+    top: 14px;
+    left: 2px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+input:checked ~ .toggle .bottom{
+    top: 14px;
+    left: 2px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked ~ .toggle .middle{
+    opacity: 0;
+    transform: translateX(20px);
+    transition: transparent;
+}
+
+input:checked ~ .slide{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0,0,0,0,5);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/Administrator/Documents/E-commerce/Finale/project/src/components/Contact.css">@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+.contact-section {
+  padding: 30px;
+  background-color: #113736;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  max-width: 70%;
+  text-align: center;
+}
+
+/* Title Styling */
+
+.contact-section h2 {
+  font-size: 100px;
+  color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  
+}
+
+/* Description Styling */
+
+.contact-section p {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  max-width: 80%;
+  font-family: "Teko", sans-serif;
+}
+
+/* Form Container */
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+/* Form Group (Spacing for inputs) */
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
+
+.form-group:hover {
+  transform: scale(1.05);
+}
+
+/* Label Styling */
+
+label {
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+/* Input & Textarea */
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #333;
+  outline: none;
+
+}
+
+input::placeholder{
+  font-size: x-large;
+  font-family: "Teko", sans-serif;
+}
+
+input:hover{
+  box-shadow: 6px 6px 10px rgba(0, 255, 0, 0.6);
+}
+
+textarea:hover{
+  box-shadow: 6px 6px 10px rgba(0, 255, 0, 0.6);
+}
+
+textarea::placeholder{
+  font-size: x-large;
+  font-family: "Teko", sans-serif;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #007bff;
+  background: #f8f8f8;
+}
+
+/* Textarea Specific Styling */
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Button */
+
+.submit-button {
+  background-color:#ffd72f ; /* Green button */
+  color:  #113736;
+  padding: 0.8rem 1.1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 40%;
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+}
+
+.submit-button:hover {
+  color: white;
+  background-color: #d1a801 ;
+  box-shadow:  6px 6px 10px #ffda46;
+}
+
+.contact-section .but button{
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #113736;
+  padding: 10px 50px;
+  width: 100%;
+  border-radius: 5px;
+  animation: fadeInUp 1s ease-out;
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+}
+
+.contact-section .but button:hover{
+  color: white;
+  background-color: #398b7c;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .contact-section {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-section p {
+    font-size: 1rem;
+  }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/Administrator/Documents/E-commerce/Finale/project/src/components/Image.css">.image {
+    flex: 1; /* Takes equal space as text */
+    display: flex;
+    justify-content: right; /* Pushes image to the right */
+    z-index: 10000;
+  }
+  
+  .image img {
+    justify-content: right;
+    max-width: 30%; /* Ensures image is responsive */
+    border-radius: 10px;
+  }
+  </style><style type="text/css" data-vite-dev-id="C:/Users/Administrator/Documents/E-commerce/Finale/project/src/App.css">@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+
+/* General Reset */
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+body {
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+    position: relative;
+    background-image: linear-gradient(to right, #398b7c, #c6fdae);
+  }
+
+
+/* Smooth Scrolling */
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/* Header Section */
+
+
+.header {
+    background-color: beige;
+    color: #113736 ;
+    text-align: center;
+    margin: 20px;
+    margin-top: 20px; /* To offset fixed navbar */
+    margin-bottom: 50px;
+    background-size: cover;
+    z-index: 10;
+    border-radius: 20px;
+    padding: 5% 10px;
+
+  }
+
+
+.header img {
+    width: 20%;
+    height: auto ; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    animation: fadeInUp 1s ease-out;
+  }
+
+
+/* 
+  .header hr {
+    width: 40%;
+    height: 5px; /* Adjust thickness if needed */
+
+
+/* background-color: #113736; Match your theme */
+
+
+/* border: none;
+    margin: 0 auto; Centers the hr */
+
+
+/* animation: fadeInUp 1s ease-out;
+} */
+
+
+.hero h1 {
+    color: #113736 ;
+    text-align: center;
+    font-size: 140px;
+    animation: fadeInUp 1s ease-out;
+    padding: 5px;
+  }
+
+
+.header h1 {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; /* Adjust weight from 300 to 700 */
+    font-style: normal;
+  }
+
+
+.hero button {
+    color: #ffffff;
+    background-color: #113736;
+    padding: 10px 60px;
+    border-radius: 5px;
+    animation: fadeInUp 1s ease-out;
+    font-family: "Teko", sans-serif;
+    font-size: x-large;
+  }
+
+
+.hero button:hover {
+    color: white;
+    background-color: #398b7c;
+  }
+
+
+/* Home Section */
+
+
+.home-section {
+  background-color: beige;
+  padding: 40px;
+  text-align: left;
+  margin: 20px;
+  border-radius: 20px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;  /* Ensures content wraps on smaller screens */
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+
+/* Left Content */
+
+
+.home-content {
+  width: 50%;
+  padding: 20px;
+}
+
+
+.home-section h2 {
+  width: 100%;
+  text-align: center;
+  color: #113736;
+  animation: fadeInUp 1s ease-out;
+  margin-left: 90px;
+  font-size: 90px;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Adjust weight from 300 to 700 */
+  font-style: normal;
+}
+
+
+.home-section p {
+  font-size: 30px;
+  color: #113736;
+  line-height: 1.2;
+  width: 75%;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 100px;
+  animation: fadeInUp 1s ease-out;
+  font-family: "Teko", sans-serif;
+}
+
+
+/* Button */
+
+
+.home-section button {
+  color: #ffffff;
+  background-color: #113736;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: block;
+  width: fit-content;
+  margin-left: 300px;
+  animation: fadeInUp 1s ease-out;
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+}
+
+
+.home-section button:hover {
+  background-color: #398b7c;
+}
+
+
+/* Right Side Image */
+
+
+.team-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.team-image img {
+  width: 90%;
+  max-width: 400px; /* Prevents oversized images */
+  border-radius: 30px;
+  box-shadow: 10px 15px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-out;
+}
+
+
+/* Responsive Design */
+
+
+@media screen and (max-width: 1024px) {
+  .home-section {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+  }
+
+  .home-content, .team-image {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .home-section h2 {
+      font-size: 2.5rem;
+  }
+
+  .home-section p {
+      font-size: 1.1em;
+      margin: 0 auto;
+      padding: 10px;
+  }
+
+  .team-image img {
+      width: 80%;
+      max-width: 350px;
+  }
+}
+
+
+/* who section */
+
+
+.who-section {
+  background-color: beige;
+  padding: 60px 20px;
+  margin-top: 50px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  
+}
+
+
+.who-section h1 {
+  text-align: center;
+  color:#113736;;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-out;
+  font-size: 90px;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Adjust weight from 300 to 700 */
+  font-style: normal;
+}
+
+
+.who-section p {
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+  text-align: center;
+  color: #113736;
+  line-height: 1.6;
+  margin: 20px 80px;
+  animation: fadeInUp 1s ease-out;
+}
+
+
+.who-section ul {
+  color: #113736;
+  list-style-position: inside; 
+  text-align: center;
+  padding: 0; 
+  display: inline-block;
+  animation: fadeInUp 1s ease-out;
+}
+
+
+.who-section ul li b{
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+}
+
+
+.who-section ul li {
+  list-style-type: disc;
+  margin: 10px 0;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+}
+
+
+.who-section hr {
+  width: 80%;
+  height: 5px;
+  background-color: #113736;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 5px;
+}
+
+
+.who-section button {
+  
+  color: #ffffff;
+  background-color: #113736;
+  padding: 5px 50px;
+  border-radius: 5px;
+  animation: fadeInUp 1s ease-out;
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+  margin-top: 10px;
+}
+
+
+.who-section button:hover {
+  color: white;
+  background-color: #398b7c;
+}
+
+
+/* Team Section */
+
+
+.team-section {
+    position: relative;
+    background-color: beige;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 60px;
+  }
+
+
+.team-section h2 {
+    font-family: "Teko", sans-serif;
+    font-size: 120px;
+    font-optical-sizing: auto;
+    font-weight: 600; /* Adjust weight from 300 to 700 */
+    font-style: normal;
+    color: #113736;
+    animation: fadeInUp 1s ease-out;
+    text-align: center;
+    padding-left: 50px
+  }
+
+
+.team-section p {
+    font-size: 25px;
+    color: #113736;
+    animation: fadeInUp 1s ease-out;
+    font-family: "Teko", sans-serif;
+  }
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+
+.team-item {
+    max-width: 200px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid  #113736;;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(90, 89, 89, 0.1);
+    transition: transform 0.2s;
+    overflow: hidden;
+    position: relative;
+    animation: fadeInUp 1s ease-out;
+  }
+
+
+.team-item:hover {
+    transform: scale(1.05);
+
+  }
+
+
+.team-item img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+
+.team-description {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+
+.team-A {
+    border: 2px solid green;
+  }
+
+
+.team-B {
+    border: 2px solid blue;
+  }
+
+
+.team-C {
+    border: 2px solid red;
+  }
+
+
+.team-D {
+    border: 2px solid violet;
+  }
+
+
+.team-E {
+    border: 2px solid pink;
+  }
+
+
+.team-A:hover {
+    box-shadow: 10px 10px 10px rgba(0, 255, 0, 0.6);
+    border: 2px solid green;
+  }
+
+
+.team-B:hover {
+    box-shadow: 10px 10px 10px rgb(40, 43, 255);
+    border: 2px solid blue;
+  }
+
+
+.team-C:hover {
+    box-shadow: 10px 10px 10px rgba(255, 2, 2, 0.683);
+    border: 2px solid red;
+  }
+
+
+.team-D:hover {
+    box-shadow: 10px 10px 10px rgb(255, 50, 255);
+    border: 2px solid violet;
+  }
+
+
+.team-E:hover {
+    box-shadow: 10px 10px 10px  rgb(255, 35, 145);
+    border: 2px solid pink;
+  }
+
+
+.button-A {
+    background-color: green;
+  }
+
+
+.button-B {
+    background-color: blue;
+  }
+
+
+.button-C {
+    background-color: red;
+  }
+
+
+.button-D {
+    background-color: violet;
+  }
+
+
+.button-E {
+    background-color: pink;
+  }
+
+
+/* Button hover effects */
+
+
+.button-A:hover {
+    box-shadow: 5px 5px 10px rgba(0, 255, 0, 0.6);
+    background-color: rgb(0, 60, 0);
+  }
+
+
+.button-B:hover {
+    background-color: rgb(0, 2, 104);
+    box-shadow: 5px 5px 10px rgb(0, 2, 104);
+  }
+
+
+.button-C:hover {
+    background-color: rgb(107, 0, 0);
+    box-shadow: 5px 5px 10px rgb(107, 0, 0);
+  }
+
+
+.button-D:hover {
+    background-color: rgb(89, 0, 126);
+    box-shadow: 5px 5px 10px  rgb(172, 3, 245);
+  }
+
+
+.button-E:hover {
+    background-color: rgb(244, 0, 122);
+    box-shadow: 5px 5px 10px  rgb(244, 0, 122);
+  }
+
+
+.details-button {
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Teko", sans-serif;
+    font-size: large;
+  }
+
+
+.details-paragraph {
+    margin: 10px;
+    font-size: 0.9rem;
+    color: #113736;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+
+.team-button button {
+    margin-top: 30px;
+    color: #ffffff;
+    background-color: #113736;
+    padding: 5px 50px;
+    border-radius: 5px;
+    animation: fadeInUp 1s ease-out;
+    font-family: "Teko", sans-serif;
+    font-size: x-large;
+  }
+
+
+.team-button button:hover {
+    color: white;
+    background-color: #398b7c;
+  }
+
+
+/* Some Section */
+
+
+.some-section {
+    background-color: beige;
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+
+.some-section h2 {
+    font-family: "Teko", sans-serif;
+    font-size: 4.5em;
+    color: #113736;
+    animation: fadeInUp 1s ease-out;
+    text-align: left;
+    padding-left: 50px;
+  }
+
+
+.some-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+
+.some-form {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #113736;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+
+.slides {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+.title-text h1 {
+    margin: auto;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+  }
+
+
+.some-text {
+    margin: 40px;
+    flex: 1;
+    color: #555;
+    color: #113736;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+  }
+
+
+.some-content p{ 
+
+    margin: 30px;
+    flex: 1;
+    font-size: x-large;
+    color: #555;
+    line-height: 1.6;
+    color: #113736;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+  }
+
+
+.some-section button {
+    color: #ffffff;
+    background-color: #113736;
+    padding: 10px 70px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 50%;
+    animation: fadeInUp 1s ease-out;
+    font-family: "Teko", sans-serif;
+    font-size: 1.3em;
+  }
+
+
+.some-section button:hover {
+    background-color: #398b7c;
+  }
+
+
+.some-text {
+    font-size: large;
+    color: #113736;
+    line-height: 1.6;
+  }
+
+
+.some-section button {
+    color: #ffffff;
+    background-color: #113736;
+    padding: 10px 70px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.3em;
+  }
+
+
+.some-section button:hover {
+    background-color: #398b7c;
+  }
+
+
+@media (min-width: 768px) {
+    .some-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .some-form {
+      flex: 1;
+    }
+    .some-text {
+      flex: 1;
+      text-align: left;
+    }
+  }
+
+
+@media (min-width: 768px) {
+    .some-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .some-form {
+      flex: 1;
+    }
+    .some-text {
+      flex: 1;
+      text-align: left;
+    }
+  }
+
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  }
+
+
+@media (min-width: 768px) {
+    .some-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .some-form {
+      flex: 1;
+    }
+    .some-text {
+      flex: 1;
+      text-align: left;
+    }
+  }
+
+
+/* Keyframes for Fade In and Up Animation */
+
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    .home-section h2 {
+      font-size: 1.8em;
+    }
+  
+    .home-section p {
+      font-size: 1em;
+    }
+  
+    .home-section .section-image {
+      align-items: center;
+      max-width: 100%;
+    }
+  
+    .gallery img {
+      max-width: 100%;
+    }
+  }
+
+
+@font-face {
+    font-family: 'Placard Next Wide';
+    src: url('/fonts/PlacardNextWide.woff2') format('woff2'),
+         url('/fonts/PlacardNextWide.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  </style></head>
+  <body>
+    <div id="root"><div class="App"><label class="all"><input class="put" type="checkbox"><div class="toggle"><span class="top common"></span><span class="middle common"></span><span class="bottom common"></span></div><div class="slide"><h1>Menu</h1><ul><li><a href="http://localhost:5173/#home"><i class="fas fa-home"></i>HOME</a></li><li><a href="http://localhost:5173/#works"><i class="fa-solid fa-briefcase"></i>WORKS</a></li><li><a href="http://localhost:5173/#who"><i class="fa-solid fa-users"></i>ABOUT</a></li></ul></div></label><nav class="navi"><nav><a href="http://localhost:5173/#home"><b>HOME</b></a><a href="http://localhost:5173/#works"></a><a href="http://localhost:5173/#who"></a><span></span></nav><nav><a href="http://localhost:5173/#home"></a><a href="http://localhost:5173/#works"><b>WORKS</b></a><a href="http://localhost:5173/#who"></a><span></span></nav><nav><a href="http://localhost:5173/#home"></a><a href="http://localhost:5173/#works"></a><a href="http://localhost:5173/#who"><b>ABOUT</b></a><span></span></nav></nav><header id="header" class="header "><div class="hero"><img src="./Final_files/logono.png" alt="logo"><h1 class="teko-custom">Our Team Portfolio!</h1><button>Click Here and Start to Know Us!</button></div></header><section id="home" class="home-section relative flex flex-wrap items-center justify-between"><div class="home-content relative z-10 text-left w-full md:w-1/2 p-10"><h2>Welcome to Our Team Portfolio!</h2><p>Welcome to our team portfolio! We are a group of five enthusiastic IT students currently in our third year of college, eager to learn and grow in the field of information technology. While we are still at the beginning of our journey, we are excited to offer our services and collaborate on projects that challenge us and help us develop our skills.<br>Explore our portfolio to see some of the projects we've worked on and our individual strengths. We appreciate your interest and look forward to the possibility of working together!</p><button>About Us</button></div><div class="team-image w-full md:w-1/2 flex justify-center"><img src="./Final_files/team.jpg" alt="Our Team" class="w-3/4 h-auto rounded-lg shadow-lg"></div><div class="overlay absolute inset-0 bg-black bg-opacity-30"></div></section><section id="who" class="who-section"><h1>Who We Are</h1><p>We are a motivated team of aspiring IT professionals with a shared goal to learn, collaborate, and provide valuable services. Our diverse skill sets cover various areas within IT, allowing us to take on different projects, big or small.</p><hr><h1>Our Skills Areas</h1><ul><li><b>Web Development:</b>  Basic to intermediate experience in HTML, CSS, JavaScript, and frameworks.</li><li><b>Software Development:</b>  Familiarity with languages like Python and Java; eager to take on tasks.</li><li><b>Data Handling:</b>  Basic knowledge of databases and data analysis with tools like Excel and SQL.</li><li><b>Technical Support:</b>  Willingness to assist with troubleshooting and support tasks.</li><li><b>Graphic Design:</b>  Experience in creating graphics, logos, and branding materials to enhance visual identity.</li></ul><hr><h1>Services We Offer:</h1><ul><li><b>Website Design and Development:</b> Helping small businesses or projects establish an online presence.</li><li><b>Basic Software Solutions:</b> Assisting with simple application development or modifications.</li><li><b>IT Support Services:</b> Providing guidance and troubleshooting assistance for basic IT issues</li><li><b>Graphic Design Services:</b> Creating logos, brochures, and promotional materials tailored to your needs</li></ul><br><button>Meet the Team</button></section><section id="team" class="team-section"><h2>MEET OUR TEAM </h2><p>We are a team of five eager IT students, embarking on our learning journey together. As third-year college students, we are guided by our curiosity and desire to grow in the technology sector. Here’s a bit about each of us:</p><div class="team"><div class="team-item team-A"><img src="./Final_files/rvin.jpg" alt="John Arvin P. Sambile"><p class="team-description">John Arvin P. Sambile</p><button class="details-button button-A">Show Details</button></div><div class="team-item team-B"><img src="./Final_files/bench.jpg" alt="Bench B. Sandagan"><p class="team-description">Bench B. Sandagan</p><button class="details-button button-B">Show Details</button></div><div class="team-item team-C"><img src="./Final_files/bert.jpg" alt="Roberto D. Colasito Jr."><p class="team-description">Roberto D. Colasito Jr.</p><button class="details-button button-C">Show Details</button></div><div class="team-item team-D"><img src="./Final_files/allyra.jpg" alt="Allyra Rheal F. Lonto"><p class="team-description">Allyra Rheal F. Lonto</p><button class="details-button button-D">Show Details</button></div><div class="team-item team-E"><img src="./Final_files/edz.jpg" alt="Edilyn A. Sagorio"><p class="team-description">Edilyn A. Sagorio</p><button class="details-button button-E">Show Details</button></div></div><div class="team-button"><button>See Our Works</button></div></section><section id="works" class="some-section"><h2>SOME OF OUR WORKS</h2><div class="some-content"><form class="some-form"><div class="slideshow-container"><div class="slides fade" style="display: none;"><img src="./Final_files/1.jpg" alt="Project 1"></div><div class="slides fade" style="display: block;"><img src="./Final_files/2.jpg" alt="Project 2"></div><div class="slides fade" style="display: none;"><img src="./Final_files/3.jpg" alt="Project 3"></div><div class="slides fade" style="display: none;"><img src="./Final_files/4.jpg" alt="Project 4"></div><div class="slides fade" style="display: none;"><img src="./Final_files/5.jpg" alt="Project 5"></div><div class="slides fade" style="display: none;"><img src="./Final_files/6.jpg" alt="Project 6"></div><div class="slides fade" style="display: none;"><img src="./Final_files/7.jpg" alt="Project 7"></div></div></form><p class="some-text"><div class="title-text"><h1>Our Mission And Vision</h1></div>Our mission is to grow and learn as we embark on this journey in technology. We hope to take on projects that allow us to apply our skills while gaining valuable experience. We believe that collaboration and continuous learning are essential to our development.<br> <br>We are open to providing beginner-level services and look forward to the opportunity to learn alongside our clients and partners.</p></div><button>Contact Us Now</button></section><section id="contact" class="contact-section"><h2>Contact Us</h2><p>We’d love to connect! If you have a project or need assistance with IT-related tasks, feel free to reach out to us.</p><form class="contact-form"><div class="form-group"><label for="name">Name:</label><input type="text" id="name" name="name" placeholder="Enter your name" value=""></div><div class="form-group"><label for="email">Email:</label><input type="email" id="email" name="email" placeholder="Enter your email" value=""></div><div class="form-group"><label for="message">Message:</label><textarea id="message" name="message" placeholder="Write your message"></textarea></div><button type="submit" class="submit-button">Send Message</button></form><div class="but"><button>Back to Top</button></div></section></div></div>
+    <script type="module" src="./Final_files/main.jsx"></script>
+  
+
+</body></html>

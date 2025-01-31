@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+.contact-section {
+  padding: 30px;
+  background-color: #113736;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  max-width: 70%;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 100px;
+  color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  
+}
+
+.contact-section p {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  max-width: 80%;
+  font-family: "Teko", sans-serif;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
+
+.form-group:hover {
+  transform: scale(1.05);
+}
+
+
+label {
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #333;
+  outline: none;
+
+}
+
+input::placeholder{
+  font-size: x-large;
+  font-family: "Teko", sans-serif;
+}
+
+input:hover{
+  box-shadow: 6px 6px 10px rgba(0, 255, 0, 0.6);
+}
+
+textarea:hover{
+  box-shadow: 6px 6px 10px rgba(0, 255, 0, 0.6);
+}
+
+textarea::placeholder{
+  font-size: x-large;
+  font-family: "Teko", sans-serif;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #007bff;
+  background: #f8f8f8;
+}
+
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+
+.submit-button {
+  background-color:#ffd72f ;
+  color:  #113736;
+  padding: 0.8rem 1.1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 40%;
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+}
+
+.submit-button:hover {
+  color: white;
+  background-color: #d1a801 ;
+  box-shadow:  6px 6px 10px #ffda46;
+}
+
+.contact-section .but button{
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #113736;
+  padding: 10px 50px;
+  width: 100%;
+  border-radius: 5px;
+  animation: fadeInUp 1s ease-out;
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+}
+
+.contact-section .but button:hover{
+  color: white;
+  background-color: #398b7c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-section p {
+    font-size: 1rem;
+  }
+}
